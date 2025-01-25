@@ -1,0 +1,118 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    direction: rtl; /* متن‌ها به صورت پیش‌فرض راست‌چین باشن */
+}
+
+/* برای متن‌های انگلیسی، جهت چپ‌چین تنظیم بشه */
+.english-text {
+    direction: ltr;
+    text-align: left;
+}
+
+.terminal {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.command {
+    color: #0f0;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end);
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.input {
+    display: inline-block;
+    min-width: 10px;
+    outline: none;
+    caret-color: #0f0;
+}
+
+.skill-level {
+    color: #0f0;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+/* استایل‌های کارت پروژه */
+.project-card {
+    background-color: #111;
+    border: 1px solid #0f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-title {
+    color: #0f0;
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.project-description {
+    color: #ccc;
+    font-size: 0.9em;
+    margin: 0 0 10px 0;
+}
+
+.project-link {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
