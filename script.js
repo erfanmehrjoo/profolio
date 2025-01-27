@@ -6,6 +6,8 @@ const sections = {
 };
 
 function handleCommand(command) {
+    command = command.toLowerCase();
+
     // مخفی کردن همه بخش‌ها
     Object.values(sections).forEach(section => {
         if (section) section.classList.add('hidden');
